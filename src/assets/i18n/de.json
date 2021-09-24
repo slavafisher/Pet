@@ -1,0 +1,21 @@
+{
+  "HOME": {
+    "TITLE": "Hallo, wie geht's dir",
+    "WELCOME": "Das ist mein Lieblingsprojekt",
+    "LANGUAGE": "Sprache",
+    "ABOUT": "Über mich",
+    "TABLE": "Tisch"
+  },
+  "TABLE": {
+    "NAME": "Name",
+    "USERNAME": "Username",
+    "CITY": "Stand",
+    "EMAIL": "email"
+  },
+  "MAIN": {
+    "HELLO": "Hallo",
+    "DESCR": "Mein Name ist Jaroslaw, und jetzt erzähle ich Ihnen ein wenig über mich ...",
+    "SKILLS": "Meine Fähigkeiten",
+    "ABOUT_ME": "Hallo nochmal. Mein Name ist Yaroslav, ich bin 25 Jahre alt, ich lebe im Dorf Nagachev, Region Lviv. Ich bin neu in der IT, könnte man sagen. Habe vor 3 Monaten mit dem Programmieren begonnen, bevor ich hauptsächlich im Ausland im Bereich Logistik gearbeitet habe."
+  }
+}

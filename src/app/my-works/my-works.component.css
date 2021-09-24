@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: url(src/assets/cool-background2.png);
+  background-size: cover;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 200px;
+  color: aliceblue;
+}

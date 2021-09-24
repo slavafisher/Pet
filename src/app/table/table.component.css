@@ -1,0 +1,36 @@
+.mainTb {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: 85vh;
+  background: url(src/assets/table.png);
+  background-size: cover;
+}
+
+.tb {
+  width: 95%;
+}
+
+a {
+  color: whitesmoke;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.input-group {
+  height: 40px;
+  width: 10%;
+}
+
+.btn {
+  height: 40px;
+  width: 10%;
+}
+
+.btn:hover {
+  color: whitesmoke;
+}

@@ -1,0 +1,40 @@
+<div class="navtop">
+  <div class="left">
+    <ul class="mainUl">
+      <li>
+        <a class="main" routerLink="/">
+          <span></span><span></span><span></span><span></span>
+          {{ "HOME.ABOUT" | translate }}</a
+        >
+      </li>
+      <li>
+        <a class="main" routerLink="/table"
+          ><span></span><span></span><span></span><span></span
+          >{{ "HOME.TABLE" | translate }}</a
+        >
+      </li>
+      <li>
+        <a class="main" routerLink="/works"
+          ><span></span><span></span><span></span><span></span>Мои работы</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="dropdown" appDropdown>
+      <button
+        class="btn btninfo dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+      >
+        {{ "HOME.LANGUAGE" | translate }}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" (click)="translate.use('en')">EN</a>
+        <a class="dropdown-item" (click)="translate.use('de')">DE</a>
+        <a class="dropdown-item" (click)="translate.use('ru')">RU</a>
+      </div>
+    </div>
+  </div>
+</div>

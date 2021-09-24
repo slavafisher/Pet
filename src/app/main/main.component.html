@@ -1,0 +1,44 @@
+<div class="main-block">
+  <div class="top">
+    <div class="left">
+      <div class="greet">
+        <h1 @fade>{{ "MAIN.HELLO" | translate }}</h1>
+        <p @fade>{{ "MAIN.DESCR" | translate }}</p>
+      </div>
+    </div>
+    <div class="right">
+      <button type="button" class="btn" (click)="toggle()" *ngIf="!activated">
+        <a class="main">
+          <span></span><span></span><span></span><span></span>✋</a
+        >
+      </button>
+      <div
+        class="about animate__backInRight animate__animated"
+        *ngIf="activated"
+      >
+        <p>{{ "MAIN.ABOUT_ME" | translate }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="bot">
+    <div class="skills-header">
+      <h2>{{ "MAIN.SKILLS" | translate }}</h2>
+    </div>
+    <div class="skills">
+      <a class="skillLink">
+        <i class="fa fa-html5"></i>
+      </a>
+    </div>
+    <div class="skills">
+      <a class="skillLink">
+        <i class="fa fa-css3"></i>
+      </a>
+    </div>
+
+    <div class="skills">
+      <a class="skillLink">
+        <i class="fa fa-code"></i>
+      </a>
+    </div>
+  </div>
+</div>
