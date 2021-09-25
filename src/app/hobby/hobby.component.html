@@ -1,0 +1,30 @@
+<div class="main">
+  <ng-container *ngFor="let match of matches; let i = index">
+    <div class="match" *ngIf="i < curMatches">
+      <div class="match-header">
+        <h4>{{ match.match }}</h4>
+      </div>
+
+      <div class="team1">
+        <h5>{{ match.team1 }}</h5>
+        <img src="{{ match.team1Img }}" width="65px" height="65px" />
+        <h5>{{ match.score1 }}</h5>
+      </div>
+      <div class="detail">
+        <h5>{{ match.maps }}</h5>
+        <h5>Матч закончился</h5>
+        <button class="btn btn-dark">
+          <a href="https://www.hltv.org/{{ match.source }}"> Detail</a>
+        </button>
+      </div>
+      <div class="team2">
+        <h5>{{ match.team2 }}</h5>
+        <img src="{{ match.team2Img }}" width="65px" height="65px" />
+        <h5>{{ match.score2 }}</h5>
+      </div>
+    </div>
+  </ng-container>
+  <div class="loader">
+    <button class="btn btn-dark" (click)="onClick()">Load More</button>
+  </div>
+</div>

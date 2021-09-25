@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
@@ -14,9 +14,10 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TablesModule } from './table/table.module';
-import { InfiniteScrollModule } from 'ngx-infinite-scroll';
-import { NgxSpinnerModule } from 'ngx-spinner';
+
 import { MyWorksComponent } from './my-works/my-works.component';
+import { HobbyComponent } from './hobby/hobby.component';
+import { HobbyService } from './hobby.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,10 +31,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     MainComponent,
     MyWorksComponent,
+    HobbyComponent,
   ],
   imports: [
-    InfiniteScrollModule,
-    NgxSpinnerModule,
     TablesModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -49,7 +49,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
     }),
   ],
-  providers: [UsersService],
+  providers: [UsersService, HobbyService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
