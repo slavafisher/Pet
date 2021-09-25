@@ -134,7 +134,7 @@ h1 {
   position: relative;
   display: inline-block;
   padding: 15px 15px;
-  color: black;
+  color: grey;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
@@ -145,8 +145,8 @@ h1 {
 
 .main:hover {
   color: whitesmoke;
-  background: black;
-  box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+  background: grey;
+  box-shadow: 0 0 10px grey, 0 0 40px grey, 0 0 80px grey;
   transition-delay: 1s;
 }
 
@@ -160,7 +160,7 @@ a span:nth-child(1) {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, black);
+  background: linear-gradient(90deg, transparent, grey);
 }
 
 a:hover span:nth-child(1) {
@@ -173,7 +173,7 @@ a span:nth-child(3) {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, black);
+  background: linear-gradient(270deg, transparent, grey);
 }
 
 a:hover span:nth-child(3) {
@@ -187,7 +187,7 @@ a span:nth-child(2) {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, black);
+  background: linear-gradient(180deg, transparent, grey);
 }
 
 a:hover span:nth-child(2) {
@@ -201,7 +201,7 @@ a span:nth-child(4) {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, black);
+  background: linear-gradient(360deg, transparent, grey);
 }
 
 a:hover span:nth-child(4) {

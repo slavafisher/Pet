@@ -29,6 +29,7 @@ a:hover {
 .btn {
   height: 40px;
   width: 10%;
+  overflow: hidden;
 }
 
 .btn:hover {

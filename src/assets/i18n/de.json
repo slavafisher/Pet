@@ -1,4 +1,8 @@
 {
+  "WORKS": {
+    "WORK": "Meine Arbeiten",
+    "MESSAGE": "KOMMT BALD"
+  },
   "HOME": {
     "TITLE": "Hallo, wie geht's dir",
     "WELCOME": "Das ist mein Lieblingsprojekt",
@@ -8,7 +12,7 @@
   },
   "TABLE": {
     "NAME": "Name",
-    "USERNAME": "Username",
+    "USERNAME": "User",
     "CITY": "Stand",
     "EMAIL": "email"
   },

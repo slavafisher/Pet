@@ -1,4 +1,8 @@
 {
+  "WORKS": {
+    "WORK": "My works",
+    "MESSAGE": "COMING SOON..."
+  },
   "HOME": {
     "TITLE": "Hello, how are you",
     "WELCOME": "Thats my pet project",
@@ -8,7 +12,7 @@
   },
   "TABLE": {
     "NAME": "Name",
-    "USERNAME": "Username",
+    "USERNAME": "User",
     "CITY": "City",
     "EMAIL": "email"
   },
