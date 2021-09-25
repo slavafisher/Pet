@@ -8,6 +8,7 @@ export class Match {
     public maps: any,
     public source: any,
     public score1: any,
-    public score2: any
+    public score2: any,
+    public data: any
   ) {}
 }

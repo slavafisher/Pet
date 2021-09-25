@@ -21,5 +21,11 @@
     "DESCR": "Mein Name ist Jaroslaw, und jetzt erzähle ich Ihnen ein wenig über mich ...",
     "SKILLS": "Meine Fähigkeiten",
     "ABOUT_ME": "Hallo nochmal. Mein Name ist Yaroslav, ich bin 25 Jahre alt, ich lebe im Dorf Nagachev, Region Lviv. Ich bin neu in der IT, könnte man sagen. Habe vor 3 Monaten mit dem Programmieren begonnen, bevor ich hauptsächlich im Ausland im Bereich Logistik gearbeitet habe."
+  },
+  "HOBBY": {
+    "MATCHSTATUS": "Das Spiel ist vorbei",
+    "LOADER": "Mehr Laden",
+    "HOBBY": "Mein Hobby ist es Sportveranstaltungen zu beobachten und zu überprüfen",
+    "DETAIL": "Detail"
   }
 }

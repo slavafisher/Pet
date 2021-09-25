@@ -23,7 +23,8 @@ export class HobbyService {
             match.maps,
             match.matchId,
             match.team1.result,
-            match.team2.result
+            match.team2.result,
+            match.time
           );
         });
       })

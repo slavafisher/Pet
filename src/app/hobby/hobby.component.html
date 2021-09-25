@@ -1,4 +1,5 @@
 <div class="main">
+  <h2>{{ "HOBBY.HOBBY" | translate | uppercase }}</h2>
   <ng-container *ngFor="let match of matches; let i = index">
     <div class="match" *ngIf="i < curMatches">
       <div class="match-header">
@@ -12,9 +13,14 @@
       </div>
       <div class="detail">
         <h5>{{ match.maps }}</h5>
-        <h5>Матч закончился</h5>
+        <h5>
+          {{ "HOBBY.MATCHSTATUS" | translate }}
+          {{ match.data | date: "shortDate" }}
+        </h5>
         <button class="btn btn-dark">
-          <a href="https://www.hltv.org/{{ match.source }}"> Detail</a>
+          <a href="https://www.hltv.org/{{ match.source }}">{{
+            "HOBBY.DETAIL" | translate
+          }}</a>
         </button>
       </div>
       <div class="team2">
@@ -25,6 +31,8 @@
     </div>
   </ng-container>
   <div class="loader">
-    <button class="btn btn-dark" (click)="onClick()">Load More</button>
+    <button class="btn btn-dark" (click)="onClick()">
+      {{ "HOBBY.LOADER" | translate }}
+    </button>
   </div>
 </div>
