@@ -1,4 +1,4 @@
-<div class="main">
+<div id="top" class="main">
   <h2>{{ "HOBBY.HOBBY" | translate | uppercase }}</h2>
   <ng-container *ngFor="let match of matches; let i = index">
     <div class="match" *ngIf="i < curMatches">
@@ -33,6 +33,11 @@
   <div class="loader">
     <button class="btn btn-dark" (click)="onClick()">
       {{ "HOBBY.LOADER" | translate }}
+    </button>
+    <button class="btn btn-dark">
+      <a href="#top">
+        <i class="fa fa-arrow-up"> </i>
+      </a>
     </button>
   </div>
 </div>
