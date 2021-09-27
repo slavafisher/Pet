@@ -12,7 +12,7 @@ export class HobbyService {
     return this.http.get(url).pipe(
       map((data: any) => {
         let matches = data;
-        console.log(data);
+
         return matches.map(function (match: any): Match {
           return new Match(
             match.event,
