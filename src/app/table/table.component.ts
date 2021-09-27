@@ -17,7 +17,7 @@ import { fade } from '../animations';
   animations: [fade],
 })
 export class TableComponent implements OnInit {
-  users: User[] = [];
+  public users: User[] = [];
   data = '';
   start = 0;
   clicked = false;

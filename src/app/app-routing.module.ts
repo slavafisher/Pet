@@ -22,14 +22,8 @@ const routes: Routes = [
     //   { path: ':id/:name/:username/:adress/:email', component: UserComponent },
     // ],
   },
-  { path: 'table/:id', component: UserComponent },
-  { path: 'table/:id/:name', component: UserComponent },
-  { path: 'table/:id/:name/:username', component: UserComponent },
-  { path: 'table/:id/:name/:username/:adress', component: UserComponent },
-  {
-    path: 'table/:id/:name/:username/:adress/:email',
-    component: UserComponent,
-  },
+  { path: 'table/:id/:username', component: UserComponent },
+
   {
     path: 'works',
     component: MyWorksComponent,

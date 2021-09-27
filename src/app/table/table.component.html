@@ -38,33 +38,19 @@
         >
           <tr @fade>
             <th scope="row">
-              <a [routerLink]="[user.id]">{{ user.id }}</a>
+              <a [routerLink]="[user.id, user.username]">{{ user.id }}</a>
             </th>
             <td>
-              <a [routerLink]="[user.id, user.name]">{{ user.name }}</a>
+              <a [routerLink]="[user.id, user.username]">{{ user.name }}</a>
             </td>
             <td>
-              <a [routerLink]="[user.id, user.name, user.username]">{{
-                user.username
-              }}</a>
+              <a [routerLink]="[user.id, user.username]">{{ user.username }}</a>
             </td>
             <td>
-              <a
-                [routerLink]="[user.id, user.name, user.username, user.adress]"
-                >{{ user.adress }}</a
-              >
+              <a [routerLink]="[user.id, user.username]">{{ user.adress }}</a>
             </td>
             <td>
-              <a
-                [routerLink]="[
-                  user.id,
-                  user.name,
-                  user.username,
-                  user.adress,
-                  user.email
-                ]"
-                >{{ user.email }}</a
-              >
+              <a [routerLink]="[user.id, user.username]">{{ user.email }}</a>
             </td>
           </tr>
         </ng-container>

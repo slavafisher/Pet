@@ -7,5 +7,5 @@ import { localizedString } from '@angular/compiler/src/output/output_ast';
 export const environment = {
   production: false,
   locales: ['en', 'de', 'ru'],
-  defaultLocale: 'ru',
+  defaultLocale: 'en',
 };
