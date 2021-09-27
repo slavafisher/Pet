@@ -1,0 +1,31 @@
+{
+  "WORKS": {
+    "WORK": "My works",
+    "MESSAGE": "COMING SOON..."
+  },
+  "HOME": {
+    "TITLE": "Hello, how are you",
+    "WELCOME": "Thats my pet project",
+    "LANGUAGE": "Language",
+    "ABOUT": "About me",
+    "TABLE": "Table"
+  },
+  "TABLE": {
+    "NAME": "Name",
+    "USERNAME": "User",
+    "CITY": "City",
+    "EMAIL": "email"
+  },
+  "MAIN": {
+    "HELLO": "Hello",
+    "DESCR": "my name is Yaroslav, and here some about me...",
+    "SKILLS": "My Skills",
+    "ABOUT_ME": "Hi again. My name is Yaroslav, I am 25 years old, I live in the village of Nagachev, Lviv region. I’m new to IT, you might say. Started learning to program 3 months ago, before mainly working abroad in the field of logistics."
+  },
+  "HOBBY": {
+    "MATCHSTATUS": "The match is over",
+    "LOADER": "Load More",
+    "HOBBY": "My hobby is watching and reviewing esports events",
+    "DETAIL": "Detail"
+  }
+}
