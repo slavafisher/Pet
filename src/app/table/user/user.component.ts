@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { User } from 'src/app/user.model';
 import { fade } from 'src/app/animations';
@@ -11,15 +11,17 @@ import { UsersService } from 'src/app/users.service';
   animations: [fade],
 })
 export class UserComponent implements OnInit {
-  user!: User;
+  userInfo!: any;
   id!: number;
-
+  status = false;
   constructor(private route: ActivatedRoute, private http: UsersService) {}
 
   ngOnInit() {
     this.id = +this.route.snapshot.params['id'];
+    setTimeout(() => (this.status = true), 1000);
+
     this.http.getUser(this.id).subscribe((data: any) => {
-      this.user = new User(
+      this.userInfo = new User(
         data.id,
         data.name,
         data.username,
@@ -27,5 +29,8 @@ export class UserComponent implements OnInit {
         data.email
       );
     });
+    // this.http.getAllData().subscribe((data: any) => {
+    //   this.user = data[this.id - 1];
+    //   console.log(this.user);
   }
 }

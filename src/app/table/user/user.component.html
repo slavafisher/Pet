@@ -1,13 +1,13 @@
 <div class="containerr">
   <div class="row">
-    <div @fade class="card text-white bg-dark mb-3">
+    <div @fade class="card text-white bg-dark mb-3" *ngIf="status">
       <div class="card-header">{{ "TABLE.USERNAME" | translate }}</div>
       <div class="card-body">
-        <p>ID: {{ user.id }}</p>
-        <p>{{ "TABLE.NAME" | translate }}: {{ user.name }}</p>
-        <p>{{ "TABLE.USERNAME" | translate }}: {{ user.username }}</p>
-        <p>{{ "TABLE.CITY" | translate }}: {{ user.adress }}</p>
-        <p>{{ "TABLE.EMAIL" | translate }}: {{ user.email }}</p>
+        <p>ID: {{ userInfo.id }}</p>
+        <p>{{ "TABLE.NAME" | translate }}: {{ userInfo.name }}</p>
+        <p>{{ "TABLE.USERNAME" | translate }}: {{ userInfo.username }}</p>
+        <p>{{ "TABLE.CITY" | translate }}: {{ userInfo.adress }}</p>
+        <p>{{ "TABLE.EMAIL" | translate }}: {{ userInfo.email }}</p>
       </div>
     </div>
   </div>

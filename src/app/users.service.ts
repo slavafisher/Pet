@@ -30,12 +30,30 @@ export class UsersService {
     );
   }
 
+  getAllData(): Observable<User[]> {
+    const url = 'https://jsonplaceholder.typicode.com/users';
+    return this.http.get(url).pipe(
+      map((data: any) => {
+        let userList = data;
+
+        return userList.map(function (user: any): User {
+          return new User(
+            user.id,
+            user.name,
+            user.username,
+            user.address.city,
+            user.email
+          );
+        });
+      })
+    );
+  }
+
   getUser(id: number): Observable<User[]> {
     const url = 'https://jsonplaceholder.typicode.com/users/' + id;
     return this.http.get(url).pipe(
       map((data: any) => {
-        let soloUser = data;
-        return soloUser;
+        return data;
       })
     );
   }
